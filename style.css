@@ -14,9 +14,10 @@ margin-top:0px;
     /* Adding the rounded corners */
     border-radius: 5px;
 
-    border: 1px solid #000;
+    border: 1px solid;
     padding: 10px 20px;
-    background: light blue;
+    background-color: light blue;
+    border-color: blue;
     font-size: 2em;
     cursor: pointer;
 }
