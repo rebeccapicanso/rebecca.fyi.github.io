@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+<?php
+   header(
+   if (isset($_POST['submit'])){
+         header("Location: main.html");
+   }
+?>
 <html>
 <body>
 
 <form action="robot.php">
   <input type="checkbox" id="robot" name='robot' value="robot">
   <label for='robot'> I am not a robot</label><br>
-  <input id name='submit' type="submit" value="Submit" onClick="redirect('rebecca.fyi/main.html')">>
+  <input id name='submit' type="submit" value="Submit">>
 </form>
 
 </body>
