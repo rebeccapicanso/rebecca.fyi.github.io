@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <style>
-         .homebutton{
-          border-radius: 5px;
-          border: 1px solid;
-          padding: 10px 20px;
-          border-color: lightblue;
-          font-size: 2em;
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          left: 50%;
+      <script type="text/javascript"> 
+         var totalCount = 9;
+         function ChangeIt() 
+         {   
+         var num = Math.ceil( Math.random() * totalCount );
+         document.body.background = 'tree'+num+'.jpg';
+         window.setInterval("ChangeIt()", 4444);
          }
+         </script>
+      <style>
+         body {
+            /* keep images very small when repeating */
+            background-size: 30px 30px;
+            background-repeat: repeat;
+            background-color: #90c0d1;
+            background-blend-mode: overlay;
+            text-align: center;
+
+         }
+   .homebutton{
+    /* Adding the rounded corners */
+    border-radius: 5px;
+
+    border: 3px solid;
+    padding: 10px 20px;
+    border-color: rgba(27, 29, 144, 0.267);
+    position: absolute;
+    top: 50%;
+    font-size: 1em;
+    cursor: pointer;
+      }
       </style>
    </head>
 <body>
-   <form>
-      <input type="button" value="I am not a robot" class="homebutton" id="btnHome" onClick="Javascript:window.location.href = 'http://www.rebecca.fyi/main.html';" />
-   </form>
+   <script type="text/javascript"> 
+      ChangeIt();
+   </script>
+<form>
+   <input type="button" value="I am not a robot" class="homebutton" id="btnHome" onClick="Javascript:window.location.href = 'http://www.rebecca.fyi/main.html';" />
+</form>
+
 </body>
 </html>
