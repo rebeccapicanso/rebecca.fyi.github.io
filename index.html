@@ -2,18 +2,18 @@
 <html>
    <head>
       <script type="text/javascript"> 
-         var totalCount = 9;
+         var totalCount = 8;
          function ChangeIt() 
          {   
          var num = Math.ceil( Math.random() * totalCount );
          document.body.background = 'tree'+num+'.jpg';
-         window.setInterval("ChangeIt()", 4444);
+         window.setInterval("ChangeIt()", 999);
          }
          </script>
       <style>
          body {
             /* keep images very small when repeating */
-            background-size: 30px 30px;
+            background-size: 33px 33px;
             background-repeat: repeat;
             background-color: #90c0d1;
             background-blend-mode: overlay;
@@ -27,6 +27,8 @@
     border: 3px solid;
     padding: 10px 20px;
     border-color: rgba(27, 29, 144, 0.267);
+    background-color: rgba(206, 207, 243, 0.908);
+    color:rgba(39, 36, 124, 0.479);
     position: absolute;
     top: 50%;
     font-size: 1em;
