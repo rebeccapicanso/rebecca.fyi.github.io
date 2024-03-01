@@ -1,2 +1,2 @@
 # rebecca.fyi.github.io
-general portfolio website lol
+general portfolio website, under development.
